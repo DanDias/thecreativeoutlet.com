@@ -1,0 +1,106 @@
+{
+  "name": "thecreativeoutlet.com",
+  "version": "0.1.0",
+  "homepage": "https://DanDias.github.io/thecreativeoutlet.com",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.10.14",
+    "@mui/material": "^5.10.14",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.28.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "gh-pages": "^4.0.0"
+  },
+  "siteData": {
+    "frontpageCategories": [
+      "Pixel Art",
+      "Games"
+    ],
+    "projects": [
+      {
+        "name": "Terrarium",
+        "category": "Pixel Art",
+        "blurb": "Part of my sketch a day challenge. I really like how this one came out.",
+        "thumbnail": "images/Terrarium.png",
+        "featured": true
+      },
+      {
+        "name": "UFO",
+        "category": "Pixel Art",
+        "blurb": "Part of my sketch a day challenge. I was really happy with the idea and the execution wasn't bad either.",
+        "thumbnail": "images/UFO.png",
+        "featured": true
+      },
+      {
+        "name": "Bridges on Mute",
+        "category": "Dumb Jokes",
+        "blurb": "This is a self published joke that is targetted for a spicific group of people and it's pages are mostly blank. ",
+        "thumbnail": "images/BridgesOnMute.png",
+        "linkTo": "https://www.lulu.com/shop/dan-dias/bridges-on-mute/hardcover/product-1wrp7vqn.html",
+        "featured": true
+      }
+    ],
+    "socialLinks": [
+      {
+        "service": "mastodon",
+        "link": "https://sfba.social/@DefinitelyNotDan"
+      },
+      {
+        "service": "github",
+        "link": "https://github.com/DanDias"
+      },
+      {
+        "service": "linkedin",
+        "link": "https://www.linkedin.com/in/dandias/"
+      }
+    ],
+    "contact": {
+      "email": "dan@thecreativeoutlet.com",
+      "phone": "+1 555-555-5555"
+    }
+  }
+}
