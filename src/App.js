@@ -8,7 +8,6 @@ import '@fontsource/roboto/700.css';
 import Loader from './components/Loader'
 import config from '../package.json';
 import Sidebar from './components/Sidebar';
-import urize from './utils/urize';
 import CategoryList from './components/CategoryList';
 import Carousel from './components/Carousel';
 import FeaturedCategory from './components/FeaturedCategory';
@@ -20,10 +19,6 @@ function App() {
   const categories = siteData.projects.map(({ category }) => {
     return category;
   }).filter(Filters.dedupe);
-
-  const routes = siteData.projects.map(({name, category}) => {
-    return urize([category,name]).join('/');
-  })
 
   const frontPageCategories = siteData.frontpageCategories.map((value, idx) => {
     const catItems = siteData.projects.filter(Filters.byProp("category", value));
