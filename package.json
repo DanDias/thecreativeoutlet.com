@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.28.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-config-semistandard": "^17.0.0",
@@ -101,6 +102,11 @@
     "contact": {
       "email": "dan@thecreativeoutlet.com",
       "phone": "+1 877-278-0319"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
