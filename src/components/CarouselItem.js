@@ -1,5 +1,4 @@
 import urize from "../utils/urize";
-import { sitePrefix } from '../utils/system';
 
 const CarouselItem = ({name, category, thumbnail, active}) => {
   return (
@@ -11,7 +10,7 @@ const CarouselItem = ({name, category, thumbnail, active}) => {
                   <div className="row">
                       <div className="col-md-12">
                           <div className="img_bg">
-                              <figure><img alt={name} src={`${sitePrefix}/${thumbnail}`} /></figure>
+                              <figure><img alt={name} src={thumbnail} /></figure>
                           </div>
                       </div>
                   </div>

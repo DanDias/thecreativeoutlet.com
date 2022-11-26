@@ -1,5 +1,4 @@
 import CategoryList from './CategoryList';
-import { sitePrefix } from '../utils/system';
 
 const Sidebar = ({categories}) => {
 
@@ -12,7 +11,7 @@ const Sidebar = ({categories}) => {
   <ul className="list-unstyled components">
 
       <li className="active">
-          <a href={sitePrefix}>Home</a>
+          <a href='/'>Home</a>
       </li>
       <CategoryList categories={categories} />
   </ul>

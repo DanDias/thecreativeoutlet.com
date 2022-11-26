@@ -7,19 +7,12 @@ import '@fontsource/roboto/700.css';
 
 import Loader from './components/Loader'
 import config from '../package.json';
-import { 
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Link } 
-  from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import urize from './utils/urize';
 import CategoryList from './components/CategoryList';
 import Carousel from './components/Carousel';
 import FeaturedCategory from './components/FeaturedCategory';
 import { Filters } from './utils/arrayExt';
-import { sitePrefix } from './utils/system';
 
 const { siteData } = config;
 
@@ -64,7 +57,7 @@ function App() {
                                     <div className="full">
                                         <div className="center-desk">
                                             <div className="logo">
-                                                <a href="index.html"><img src={sitePrefix + "/images/logo.png"} alt="#" /></a>
+                                                <a href="index.html"><img src="images/logo.png" alt="A neat, if I do say so myself, logo with paintbrushes pointed diagonally in the air with the brush ends intersecting. From one brush, red paint drips down. From the other, a blue drop. In the middle triangle the two paintbrushes form is a gradient between Red to Blue, with our signature purple in the middle. I hope you enjoy it." /></a>
                                             </div>
                                         </div>
                                     </div>
@@ -73,18 +66,18 @@ function App() {
                                     <div className="right_header_info">
                                         <ul>
                                             <li className="menu_iconb">
-                                                <a href={"tel:"+siteData.contact.phone}><img style={ { marginRight: "15px" } } src={sitePrefix + "/icon/1.png"} alt="phone number" />{siteData.contact.phone}</a>
+                                                <a href={"tel:"+siteData.contact.phone}><img style={ { marginRight: "15px" } } src="icon/1.png" alt="phone number" />{siteData.contact.phone}</a>
                                             </li>
                                             <li className="tytyu">
-                                                <a href="#"> <img style={ { marginRight: "15px"} } src={sitePrefix + "/icon/2.png"} alt="shopping cart" /></a>
+                                                <a href="#"> <img style={ { marginRight: "15px"} } src="/icon/2.png" alt="shopping cart" /></a>
                                             </li>
                                             <li className="menu_iconb">
-                                                <a href="#"><img style={ { marginRight: "15px"} } src={sitePrefix + "/icon/3.png"} alt="get a clue <3" /></a>
+                                                <a href="#"><img style={ { marginRight: "15px"} } src="/icon/3.png" alt="get a clue <3" /></a>
                                             </li>
 
                                             <li>
                                                 <button type="button" id="sidebarCollapse">
-                                                    <img src={sitePrefix + "/images/menu_icon.png"} alt="This is the hamburger menu. But not a menu for hamburgers. It's the three little lines we somehow chose to call a hamburger menu. Crazy, right?" />
+                                                    <img src={"images/menu_icon.png"} alt="This is the hamburger menu. But not a menu for hamburgers. It's the three little lines we somehow chose to call a hamburger menu. Crazy, right?" />
                                                 </button>
                                             </li>
                                         </ul>
@@ -161,11 +154,11 @@ function App() {
                                     <h3>Contact us </h3>
                                     <ul className="loca">
                                         <li>
-                                            <a href="#"><img src={sitePrefix + "/icon/loc.png"} alt="address" /></a>Null Island</li>
+                                            <a href="https://en.wikipedia.org/wiki/Null_Island" target='_blank' rel='noreferrer'><img src="icon/loc.png" alt="address" /></a>Null Island</li>
                                         <li>
-                                            <a href="#"><img src={sitePrefix + "/icon/call.png"} alt="phone" /></a>{siteData.contact.phone} </li>
+                                            <a href="#"><img src="/icon/call.png" alt="phone" /></a>{siteData.contact.phone} </li>
                                         <li>
-                                            <a href={"mailto:"+siteData.contact.email}><img src={sitePrefix + "/icon/email.png"} alt="email" /></a>{siteData.contact.email}</li>
+                                            <a href={`mailto:${siteData.contact.email}`}><img src="icon/email.png" alt="email" /></a>{siteData.contact.email}</li>
                                     </ul>
 
                                 </div>
@@ -209,5 +202,7 @@ function App() {
   </div>
   );
 }
+
+
 
 export default App;
