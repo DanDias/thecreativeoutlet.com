@@ -1,10 +1,16 @@
-const urize = (category=null,name=null,components=[]) => {
-  if (category && name) {
-    components = [category,name]
+const urize = (...parts) => {
+  let components = [];
+  for(let part of parts) {
+    if (Array.isArray(part)) {
+      components = components.concat(part);
+    } else if (typeof(part) === 'object') {
+      console.warn(`Objects are not supported to be put into a uri`)
+    }else {
+      components.push(part);
+    }
   }
-  const path = components.map((comp) => {
-    return encodeURIComponent(comp)
-      .toLowerCase();
+  const path = components.map((v) => {
+    return v.toLowerCase().replace(/' '/g,'_')
   }).join('/')
   return path; 
 }
