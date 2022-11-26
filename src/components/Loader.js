@@ -1,7 +1,9 @@
+import { sitePrefix } from '../utils/system';
+
 const Loader = () => {
   return (
     <div className="loader_bg">
-      <div className="loader"><img src={ process.env.PUBLIC_URL + "/images/loading.gif"} alt="#" /></div>
+      <div className="loader"><img src={ sitePrefix + "/images/loading.gif"} alt="#" /></div>
     </div>
   )
 }
