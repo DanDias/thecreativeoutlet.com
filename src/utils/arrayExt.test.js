@@ -24,6 +24,13 @@ test('remove duplicates',() => {
   expect(testArrays.withDupes.filter(Filters.dedupe)).toStrictEqual(['mock','yeah','ing','bird']);
 })
 
-test(`filter by property`,() => {
-  expect(testArrays.objects.filter(Filters.byProp("filterByMeBool"))).toStrictEqual(testArrays.objects[0]);
+test(`filter by boolean property`,() => {
+  expect(testArrays.objects.filter(Filters.byProp("filterByMeBool"))).toStrictEqual([testArrays.objects[0]]);
 });
+
+test(`filter by property equality`, () => {
+  expect(testArrays.objects.filter(Filters.byProp("name", "something"))).toStrictEqual([
+    testArrays.objects[0],
+    testArrays.objects[2]
+  ]);
+})
