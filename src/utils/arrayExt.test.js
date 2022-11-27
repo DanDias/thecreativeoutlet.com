@@ -15,6 +15,18 @@ const testArrays = {
     {
       "name": "something",
       "outlook": "good"
+    },
+    {
+      "name": "one",
+      "value": 1
+    },
+    {
+      "name": "two",
+      "value": 2
+    },
+    {
+      "name": "three",
+      "value": 3
     }
   ]
 }
@@ -32,5 +44,17 @@ test(`filter by property equality`, () => {
   expect(testArrays.objects.filter(Filters.byProp("name", "something"))).toStrictEqual([
     testArrays.objects[0],
     testArrays.objects[2]
+  ]);
+})
+
+test(`filter by property gt`, () => {
+  expect(testArrays.objects.filter(Filters.byProp("value", null, 2))).toStrictEqual([
+    testArrays.objects[5]
+  ]);
+})
+
+test(`filter by property lt`, () => {
+  expect(testArrays.objects.filter(Filters.byProp("value", null, null, 2))).toStrictEqual([
+    testArrays.objects[3]
   ]);
 })
