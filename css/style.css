@@ -468,11 +468,11 @@ nav.main-menu {
 
 .menu-area-main li:hover a,
 .menu-area-main li:focus a {
-	color: #ffc221;
+	color: #6415c4;
 }
 
 .menu-area-main li.active a {
-	color: #ffc221;
+	color: #6415c4;
 }
 
 .right_cart_section {
@@ -1365,6 +1365,16 @@ box-shadow: #dedede 0px 0px 9px 4px;
 margin-bottom: 10px;
     }
 
+.head_top_small {
+	background: url(../images/bg_main.jpg);
+	background-repeat: no-repeat;
+padding-bottom: 37px;
+height: 125px;
+background-position: top;
+box-shadow: #dedede 0px 0px 9px 4px;
+margin-bottom: 10px;
+}
+
 .relative {
 	position: absolute;
 	top: 50%;
@@ -1398,6 +1408,27 @@ font-weight: bold;
 font-size: 85px;
 line-height: 111px;
 text-transform: uppercase;
+}
+
+.banner-button {
+	width: 191px;
+	background: #fcfcfc;
+	padding: 9px 0px;
+	color: #000;
+	font-size: 17px;
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+	transition: all .4s ease-in;
+
+}
+.banner-button:hover {
+background: #000;
+color: #fff;
+transition: all .4s ease-in;
+border-radius: 20px;
 }
 
 .banner_main .text-bg a {
