@@ -2,21 +2,23 @@ import CategoryList from './CategoryList';
 
 const Sidebar = ({categories}) => {
 
-  return <nav id="sidebar">
+  return (<div className="sidebar">
+        <nav id="sidebar">
 
-  <div id="dismiss">
-      <i className="fa fa-arrow-left"></i>
-  </div>
+        <div id="dismiss">
+            <i className="fa fa-arrow-left"></i>
+        </div>
 
-  <ul className="list-unstyled components">
+        <ul className="list-unstyled components">
 
-      <li className="active">
-          <a href='/'>Home</a>
-      </li>
-      <CategoryList categories={categories} />
-  </ul>
+            <li className="active">
+                <a href='/'>Home</a>
+            </li>
+            <CategoryList categories={categories} />
+        </ul>
 
-</nav>
+        </nav>
+    </div>)
 }
 
 export default Sidebar;

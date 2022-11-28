@@ -12,7 +12,7 @@ const urize = (...parts) => {
   const path = components.map((v) => {
     return v.toLowerCase().replace(/' '/g,'_')
   }).join('/')
-  return path; 
+  return '/'+path; 
 }
 
 export default urize;
