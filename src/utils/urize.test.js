@@ -15,3 +15,7 @@ test('with mix of types',() => {
 test('with an object',() => {
   expect(urize('test','four',{ "test": 0 })).toBe('/test/four')
 })
+
+test('Spaces should be replaced with _', () => {
+  expect(urize('this is a phrase')).toBe('/this_is_a_phrase')
+})

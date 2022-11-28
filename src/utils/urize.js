@@ -10,7 +10,7 @@ const urize = (...parts) => {
     }
   }
   const path = components.map((v) => {
-    return v.toLowerCase().replace(/' '/g,'_')
+    return v.toLowerCase().replace(/\s/g,'_')
   }).join('/')
   return '/'+path; 
 }
