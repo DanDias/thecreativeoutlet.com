@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import CategoryList from './CategoryList';
 
 const Sidebar = ({categories}) => {
@@ -12,7 +13,7 @@ const Sidebar = ({categories}) => {
         <ul className="list-unstyled components">
 
             <li className="active">
-                <a href='/'>Home</a>
+                <Link to='/'>Home</Link>
             </li>
             <CategoryList categories={categories} />
         </ul>

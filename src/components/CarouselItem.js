@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import urize from "../utils/urize";
 
 const CarouselItem = ({name, category, thumbnail, active}) => {
   return (
     <div className={"carousel-item" + (active ? " active" : "")}>
-        <a href={urize(category, name)}>
+        <Link to={urize(category, name)}>
           <div className="container">
               <div className="header"></div>
               <div className="carousel-caption text">
@@ -16,7 +17,7 @@ const CarouselItem = ({name, category, thumbnail, active}) => {
                   </div>
               </div>
           </div>
-        </a>
+        </Link>
     </div>
   )
 }

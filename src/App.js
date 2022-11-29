@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -7,7 +7,6 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 import Loader from './components/Loader';
-import FlashyHeader from './components/FlashyHeader';
 import Sidebar from './components/Sidebar';
 
 import config from '../package.json';
@@ -39,8 +38,8 @@ function App() {
   return (
     <div className="App">
         <Loader />
-        <Sidebar categories={categories} />
         <Router>
+            <Sidebar categories={categories} />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path='/test' element={

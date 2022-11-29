@@ -1,7 +1,8 @@
 import React from "react";
-import { PaginatedList } from "./PaginatedList"
+import PaginatedList from "./PaginatedList"
 import Project from "../routes/Project";
 import urize from "../utils/urize";
+import { Link } from "react-router-dom";
 
 const FeaturedCategory = ({categoryName, items}) => {
   const itemsInCategory = items.map((item) => { return <Project short={true} key={item.name} {...item} /> });
@@ -10,11 +11,8 @@ const FeaturedCategory = ({categoryName, items}) => {
     <React.Fragment>
       <div id="brand" className="brand-bg">
         <h3>{categoryName}</h3>
-        <div className="row">
-          {itemsInCategory.length > 0 ? itemsInCategory : <span>There's no {categoryName.toLowerCase()} available at the moment!</span>}
-        </div>
-        <PaginatedList items={items} />
-        <a className="seemore" href={`/${urize(categoryName)}`}>See more</a>
+        <PaginatedList items={itemsInCategory} itemsPerRow={4} />
+        <Link className="seemore" to={`${urize(categoryName)}`}>See more</Link>
       </div>
     </React.Fragment>
   );

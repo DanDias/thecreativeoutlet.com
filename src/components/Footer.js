@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import config from '../../package.json';
+import urize from '../utils/urize';
 
 const { siteData } = config;
 
@@ -6,7 +8,7 @@ const Footer = () => {
   const socialLinks = siteData.socialLinks.map(({service, link}) => {
     return (
       <li>
-        <a href={link}><i className={`fa fa-${service}`}></i></a>
+        <Link to={link}><i className={`fa fa-${service}`}></i></Link>
       </li>
     )
   })
@@ -50,11 +52,11 @@ const Footer = () => {
                           <div className="address">
                               <h3>customer service</h3>
                               <ul className="Menu_footer">
-                                  <li className="active"> <a href="#">My account</a> </li>
-                                  <li><a href="#">Wishlist</a> </li>
-                                  <li><a href="#">My Cart</a> </li>
-                                  <li><a href="#">Checkout</a> </li>
-                                  <li><a href="#">Login</a> </li>
+                                  <li className="active"> <Link to={urize('account')}>My account</Link> </li>
+                                  <li><Link to={urize('wishlist')}>Wishlist</Link> </li>
+                                  <li><Link to={urize('cart')}>My Cart</Link> </li>
+                                  <li><Link to={urize('checkout')}>Checkout</Link> </li>
+                                  <li><Link to={urize('login')}>Login</Link> </li>
                               </ul>
                           </div>
                       </div>
