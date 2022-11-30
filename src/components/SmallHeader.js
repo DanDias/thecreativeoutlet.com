@@ -3,7 +3,7 @@ import config from '../../package.json';
 
 const { siteData } = config;
 
-const SmallHeader = ({ }) => {
+const SmallHeader = ({ cart=true, clues=true}) => {
     return (<header>
         <div className="head_top_small">
             <div className="header">
@@ -24,12 +24,12 @@ const SmallHeader = ({ }) => {
                                     <li className="menu_iconb">
                                         <a href={"tel:" + siteData.contact.phone}><img style={{ marginRight: "15px" }} src="/icon/1.png" alt="phone number" />{siteData.contact.phone}</a>
                                     </li>
-                                    <li className="tytyu">
+                                    { cart || <li className="tytyu">
                                         <Link to="cart"> <img style={{ marginRight: "15px" }} src="/icon/2.png" alt="shopping cart" /></Link>
-                                    </li>
-                                    <li className="menu_iconb">
+                                    </li> }
+                                    { clues||<li className="menu_iconb">
                                         <Link to="clues"><img style={{ marginRight: "15px" }} src="/icon/3.png" alt="get a clue <3" /></Link>
-                                    </li>
+                                    </li> }
 
                                     <li>
                                         <button type="button" id="sidebarCollapse">

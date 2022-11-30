@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import config from '../../package.json';
 import { Filters } from '../utils/arrayExt';
 import CarouselItem from './CarouselItem';
@@ -24,14 +24,16 @@ const Carousel = () => {
   })
 
   return (
-    <div id="theCarousel" className="carousel slide banner_Client" data-ride="carousel">
-        <div className="carousel-inner">
-            {carouselItems}
-        </div>
-        <ol className="carousel-indicators">
-          {indicators}
-        </ol>
-    </div>
+    <React.Fragment>
+      <div id="theCarousel" className="carousel slide banner_Client" data-ride="carousel">
+          <div className="carousel-inner">
+              {carouselItems}
+          </div>
+      </div>
+      <ol className="carousel-indicators">
+        {indicators}
+      </ol>
+    </React.Fragment>
   )
 }
 

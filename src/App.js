@@ -18,6 +18,9 @@ import urize from './utils/urize';
 import Category from './routes/Category';
 import SimplePage from './components/SimplePage';
 import Project from './routes/Project';
+import Cart from './routes/Cart';
+import Clues from './routes/Clues';
+import Test from './routes/Test';
 
 const { siteData } = config;
 
@@ -42,11 +45,9 @@ function App() {
             <Sidebar categories={categories} />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path='/test' element={
-                    <SimplePage title="Awkward...">
-                    <p>Hello. You've reached my test page. I never know what weird junk is going to be here. So... good luck!</p>
-                    </SimplePage>
-                } />
+                <Route path='/test' element={<Test />} />
+                <Route path='/cart' element={<Cart />} />
+                <Route path='/clues' element={<Clues />} /> 
                 {categoryRoutes}
                 {projectRoutes}
             </Routes>

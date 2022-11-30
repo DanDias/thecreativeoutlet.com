@@ -22,7 +22,7 @@ const FlashyHeader = ({}) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-sm-12">
+                            <div className="col-lg-9">
                                 <div className="right_header_info">
                                     <ul>
                                         <li className="menu_iconb">
