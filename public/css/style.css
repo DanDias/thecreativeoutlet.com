@@ -143,9 +143,13 @@ p {
 }
 
 a {
-	color: #222222;
+	color: #a842c6;
 	text-decoration: none;
 	outline: none !important;
+}
+
+a:visited {
+	color: #6b1d6e;
 }
 
 a,

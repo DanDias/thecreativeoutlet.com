@@ -4,6 +4,8 @@ import React from 'react';
 import SmallHeader from "../components/SmallHeader";
 import urize from "../utils/urize";
 import { ArrowBack } from "@mui/icons-material";
+import { marked } from 'marked';
+import insane from 'insane';
 
 const Project = ({ name, category, blurb, thumbnail, linkTo = null, featured, short = false }) => {
   const navigate = useNavigate();
@@ -46,7 +48,7 @@ const Project = ({ name, category, blurb, thumbnail, linkTo = null, featured, sh
                   <div className="col-sm-6 col-xs-1 text">
                     <h4>{name}</h4>
                     <h5>{category}</h5>
-                    <p>{blurb}</p>
+                    <p dangerouslySetInnerHTML={{__html: insane(marked.parse(blurb))}}></p>
                     {linkTo ? <p><a href={linkTo} target="_blank" rel="noreferrer">See More</a></p> : null}
                   </div>
                 </div>

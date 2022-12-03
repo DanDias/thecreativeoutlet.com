@@ -12,6 +12,8 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "insane": "^2.6.2",
+    "marked": "^4.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
@@ -73,7 +75,7 @@
       {
         "name": "UFO",
         "category": "Pixel Art",
-        "blurb": "Part of my <a href='https://www.reddit.com/r/SketchDaily/'>sketch dail</a> challenge series. I was really happy with the idea and the execution wasn't bad either.",
+        "blurb": "Part of the <a href='https://www.reddit.com/r/SketchDaily/' target='_blank'>sketch daily</a> challenge series. I was really happy with the idea and the execution wasn't bad either.",
         "thumbnail": "/images/UFO.png",
         "featured": true
       },
@@ -88,7 +90,7 @@
       {
         "name": "Brief Case (sketch)",
         "category": "Pixel Art",
-        "blurb": "One of the <a href='https://www.reddit.com/r/SketchDaily/'>sketch daily</a> prompts was Briefcase. I went for the obvious pun and made an image showing a brief case. A little animation in there for fun!",
+        "blurb": "One of the <a href='https://www.reddit.com/r/SketchDaily/' target='_blank'>sketch daily</a> prompts was Briefcase. I went for the obvious pun and made an image showing a brief case. A little animation in there for fun!",
         "thumbnail": "/images/BriefCase.gif"
       },
       {
