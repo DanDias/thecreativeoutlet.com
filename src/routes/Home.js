@@ -1,21 +1,21 @@
   
 import CategoryList from "../components/CategoryList";
 import FeaturedCategory from '../components/FeaturedCategory';
-import config from '../../package.json';
+import config from '../settings.json';
 
 import { Filters } from '../utils/arrayExt';
 import React from "react";
 import FlashyHeader from "../components/FlashyHeader";
 
-const { siteData } = config;
+const { items, frontpageTags } = config;
 
 const Home = () => {
-  const categories = siteData.projects.map(({ category }) => {
+  const categories = items.map(({ category }) => {
     return category;
   }).filter(Filters.dedupe);
 
-  const frontPageCategories = siteData.frontpageCategories.map((value, idx) => {
-    const catItems = siteData.projects.filter(Filters.byProp("category", value));
+  const frontPageCategories = frontpageTags.map((value, idx) => {
+    const catItems = items.filter(Filters.byProp("category", value));
     return <FeaturedCategory key={value} categoryName={value} items={catItems} />
   })
 

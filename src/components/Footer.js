@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import config from '../../package.json';
+import config from '../settings.json';
 import urize from '../utils/urize';
 
-const { siteData } = config;
+const { socials, metadata } = config;
 
 const Footer = () => {
-  const socialLinks = siteData.socialLinks.map(({service, link}) => {
+  const socialLinks = socials.map(({service, link}) => {
     return (
       <li>
         <Link to={link}><i className={`fa fa-${service}`}></i></Link>
@@ -41,9 +41,9 @@ const Footer = () => {
                                   <li>
                                       <a href="https://en.wikipedia.org/wiki/Null_Island" target='_blank' rel='noreferrer'><img src="/icon/loc.png" alt="address" /></a>Null Island</li>
                                   <li>
-                                      <a href={"tel:"+siteData.contact.phone}><img src="/icon/call.png" alt="phone" /></a>{siteData.contact.phone} </li>
+                                      <a href={"tel:"+metadata.contact.phone}><img src="/icon/call.png" alt="phone" /></a>{metadata.contact.phone} </li>
                                   <li>
-                                      <a href={`mailto:${siteData.contact.email}`}><img src="/icon/email.png" alt="email" /></a>{siteData.contact.email}</li>
+                                      <a href={`mailto:${metadata.contact.email}`}><img src="/icon/email.png" alt="email" /></a>{metadata.contact.email}</li>
                               </ul>
 
                           </div>

@@ -1,9 +1,9 @@
 import Carousel from './Carousel';
 import TrickButton from './TrickButton';
-import config from '../../package.json';
+import config from '../settings.json';
 import { Link } from 'react-router-dom';
 
-const { siteData } = config;
+const { metadata } = config;
 
 const FlashyHeader = ({}) => {
   return(<header>
@@ -26,7 +26,7 @@ const FlashyHeader = ({}) => {
                                 <div className="right_header_info">
                                     <ul>
                                         <li className="menu_iconb">
-                                            <a href={"tel:"+siteData.contact.phone}><img style={ { marginRight: "15px" } } src="/icon/1.png" alt="phone number" />{siteData.contact.phone}</a>
+                                            <a href={"tel:"+metadata.contact.phone}><img style={ { marginRight: "15px" } } src="/icon/1.png" alt="phone number" />{metadata.contact.phone}</a>
                                         </li>
                                         <li className="tytyu">
                                             <Link to="cart"> <img style={ { marginRight: "15px"} } src="/icon/2.png" alt="shopping cart" /></Link>

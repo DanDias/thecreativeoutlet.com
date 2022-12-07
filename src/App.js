@@ -9,23 +9,22 @@ import '@fontsource/roboto/700.css';
 import Loader from './components/Loader';
 import Sidebar from './components/Sidebar';
 
-import config from '../package.json';
+import config from './settings.json';
 
 import Home from './routes/Home';
 
 import { Filters } from './utils/arrayExt';
 import urize from './utils/urize';
 import Category from './routes/Category';
-import SimplePage from './components/SimplePage';
 import Project from './routes/Project';
 import Cart from './routes/Cart';
 import Clues from './routes/Clues';
 import Test from './routes/Test';
 
-const { siteData } = config;
+const { items } = config;
 
 function App() {
-    const categories = siteData.projects.map(({category}) => category).filter(Filters.dedupe);
+    const categories = items.map(({category}) => category).filter(Filters.dedupe);
 
     const categoryRoutes = categories.map((category) => {
         return <Route key={category} path={urize(category)} element={
@@ -33,7 +32,7 @@ function App() {
         } />
       })
       
-      const projectRoutes = siteData.projects.map((projData) => {
+      const projectRoutes = items.map((projData) => {
         const path = urize([projData.category,projData.name]);
         return <Route key={path} path={path} element={<Project {...projData} />} />;
       })

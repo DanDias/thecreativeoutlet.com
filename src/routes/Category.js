@@ -1,6 +1,6 @@
 import React from 'react';
 
-import config from '../../package.json';
+import config from '../settings.json';
 import PaginatedList from '../components/PaginatedList';
 import ReturnTo from '../components/ReturnTo';
 import SmallHeader from '../components/SmallHeader';
@@ -8,10 +8,10 @@ import SmallHeader from '../components/SmallHeader';
 import { Filters } from '../utils/arrayExt';
 import Project from './Project';
 
-const {siteData} = config;
+const { items } = config;
 
 const Category = ({ name, children }) => {
-  const projectItems = siteData.projects.filter(Filters.byProp("category",name)).map((props) => {
+  const projectItems = items.filter(Filters.byProp("category",name)).map((props) => {
     return <Project {...props} short={true} >{props.name}</Project>
   });
 

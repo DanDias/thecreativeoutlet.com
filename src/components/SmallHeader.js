@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import config from '../../package.json';
+import config from '../settings.json';
 
-const { siteData } = config;
+const { metadata } = config;
 
 const SmallHeader = ({ cart=true, clues=true}) => {
     return (<header>
@@ -22,7 +22,7 @@ const SmallHeader = ({ cart=true, clues=true}) => {
                             <div className="right_header_info">
                                 <ul>
                                     <li className="menu_iconb">
-                                        <a href={"tel:" + siteData.contact.phone}><img style={{ marginRight: "15px" }} src="/icon/1.png" alt="phone number" />{siteData.contact.phone}</a>
+                                        <a href={"tel:" + metadata.contact.phone}><img style={{ marginRight: "15px" }} src="/icon/1.png" alt="phone number" />{metadata.contact.phone}</a>
                                     </li>
                                     { cart || <li className="tytyu">
                                         <Link to="cart"> <img style={{ marginRight: "15px" }} src="/icon/2.png" alt="shopping cart" /></Link>

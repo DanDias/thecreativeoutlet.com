@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import config from '../../package.json';
+import config from '../settings.json';
 import { Filters } from '../utils/arrayExt';
 import CarouselItem from './CarouselItem';
 
-const { siteData } = config;
+const { items } = config;
 
 const Carousel = () => {
   const [ activeItem, setActiveItem ] = useState(0)
 
-  const featuredItems = siteData.projects.filter(Filters.byProp("featured"))
+  const featuredItems = items.filter(Filters.byProp("featured"))
   const carouselItems = featuredItems
     .map((data, idx) => {
       return (
