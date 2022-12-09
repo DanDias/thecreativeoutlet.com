@@ -4,21 +4,21 @@
       "name": "Terrarium",
       "category": "Pixel Art",
       "blurb": "Part of my sketch a day challenge. I really like how this one came out.",
-      "thumbnail": "/images/Terrarium.png",
+      "thumbnail": "/images/pixelart/Terrarium.png",
       "featured": true
     },
     {
       "name": "UFO",
       "category": "Pixel Art",
       "blurb": "Part of the <a href='https://www.reddit.com/r/SketchDaily/' target='_blank'>sketch daily</a> challenge series. I was really happy with the idea and the execution wasn't bad either.",
-      "thumbnail": "/images/UFO.png",
+      "thumbnail": "/images/pixelart/UFO.png",
       "featured": true
     },
     {
       "name": "Bridges on Mute",
       "category": "Dumb Jokes",
       "blurb": "This is a self published joke that is targetted for a spicific group of people and it's pages are mostly blank. ",
-      "thumbnail": "/images/BridgesOnMute.png",
+      "thumbnail": "/images/writing/BridgesOnMute.png",
       "linkTo": "https://www.lulu.com/shop/dan-dias/bridges-on-mute/hardcover/product-1wrp7vqn.html",
       "featured": true
     },
@@ -26,20 +26,92 @@
       "name": "Brief Case (sketch)",
       "category": "Pixel Art",
       "blurb": "One of the <a href='https://www.reddit.com/r/SketchDaily/' target='_blank'>sketch daily</a> prompts was Briefcase. I went for the obvious pun and made an image showing a brief case. A little animation in there for fun!",
-      "thumbnail": "/images/BriefCase.gif"
+      "thumbnail": "/images/pixelart/BriefCase.gif"
     },
     {
       "name": "Brief Cases",
       "category": "Games",
       "status": "On Hold",
       "blurb": "A friend and I were talking about collective nouns for animals... So I took the Brief Case (sketch) and enhanced it with puns! A Lawyer Business of ferrets, a parliment of Owl judges, etc. Since I was already thinking about my ferrets.biz site I was determined to bring it to there. So then I started thinking what would this animal world look like. I branched out past Judge Hooty and the Kangaroo Court. I imagined there was a person washed up on an island full of animals who had evolved. I was crankig out images for it and it seemed like it had steam.",
-      "thumbnail": "/images/BriefCases_Game.gif"
+      "thumbnail": "/images/games/BriefCases_Game.gif"
     },
     {
       "name": "Beach Hyena",
       "category": "Pixel Art",
       "blurb": "In the Brief Cases 'universe' this little guy loves going to the beach. I figured Hyenas laugh, so they have to like a good time.",
-      "thumbnail": "/images/BeachHyena.png"
+      "thumbnail": "/images/pixelart/BeachHyena.png"
+    },
+    {
+      "name": "Lamp Post",
+      "category":"Pixel Art",
+      "blurb": "A lamp post inspired by a lamp post outside my house. It took on its own life afterwards. It reminds me a bit of the lamp post at the End of Time in Chrono Trigger.",
+      "thumbnail": "/images/pixelart/Lamppost.png"
+    },
+    {
+      "name": "Island",
+      "category": "Pixel Art",
+      "blurb": "An experiment I did with a limited color palette. Reminds me of a Game Boy (original) game.",
+      "thumbnail": "/images/pixelart/Island.png"
+    },
+    {
+      "name": "Earthrise",
+      "category": "Pixel Art",
+      "blurb": "I used the picture Earthrise as a reference for this and primarily used a tool that lighten and darkens pixels since it was the perfect scene for that opeeration.",
+      "thumbnail": "/images/pixelart/Earthrise (Moon).png"
+    },
+    {
+      "name": "CyberDuck",
+      "category": "Pixel Art",
+      "blurb": "I was talking to a colleague about an FTP tool called CyberDuck and it sparked this image. I liked playing with the dark background and light from the screen.",
+      "thumbnail": "/images/pixelart/CyberDuck.png"
+    },
+    {
+      "name": "Cockroach",
+      "category": "Pixel Art",
+      "blurb": "A part of the <a href='https://www.reddit.com/r/SketchDaily/' target='_blank'>sketch daily</a> set. The first one I did and the gateway back to doing pixel art.",
+      "thumbnail": "/images/pixelart/Cockroach.png"
+    },
+    {
+      "name": "Judge Hooty",
+      "category": "Pixel Art",
+      "blurb": "Since a group of owls are a parliment and that gives visions of people in white powdered wigs and then judges. Of course the judge's name had to be Judge Hooty.",
+      "thumbnail": "/images/pixelart/JudgeHooty.png"
+    },
+    {
+      "name": "Magpie",
+      "category": "Pixel Art",
+      "blurb": "One of the anthropomorphized animals I planned on using for Brief Cases.",
+      "thumbnail": "/images/pixelart/Magpie.png"
+    },
+    {
+      "name": "Moth",
+      "category": "Pixel Art",
+      "blurb": "Another insect that I think was for <a href='https://www.reddit.com/r/SketchDaily/' target='_blank'>sketch daily</a>.",
+      "thumbnail": "/images/pixelart/Moth.png"
+    },
+    {
+      "name": "Mr Farington",
+      "category": "Pixel Art",
+      "blurb": "A ferret for Brief Cases. He was going to be a defendent for a case.",
+      "thumbnail": "/images/pixelart/MrFarington_Front.png"
+    },
+    {
+      "name": "Robot",
+      "category": "Pixel Art",
+      "blurb": "Robot! I started with the treads not really knowing what I wanted to draw. Made my way up.",
+      "thumbnail": "/images/pixelart/Robot.png"
+    },
+    {
+      "name": "Skunk",
+      "category": "Pixel Art",
+      "blurb": "An anthropomorphized skunk who was going to be a plantiff.",
+      "thumbnail": "/images/pixelart/Skunk.png"
+    },
+    {
+      "name": "Tiger",
+      "category": "Pixel Art",
+      "blurb": "My daughter likes tigers. So... Tiger.",
+      "thumbnail": "/images/pixelart/TigerLarge.png"
     }
   ],
   "tags": [],
@@ -58,8 +130,8 @@
     }
   ],
   "frontpageTags": [
-    "Pixel Art",
-    "Games"
+    "Dumb Jokes",
+    "Pixel Art"
   ],
   "metadata": {
     "title": "The Creative Outlet",
