@@ -10,14 +10,14 @@ import Project from './Project';
 
 const { items } = config;
 
-const Category = ({ name, children }) => {
+const Category = ({ name, handleSidebar, children }) => {
   const projectItems = items.filter(Filters.byProp("category",name)).map((props) => {
     return <Project {...props} short={true} >{props.name}</Project>
   });
 
   return (
     <React.Fragment>
-      <SmallHeader/>
+      <SmallHeader handleSidebar={handleSidebar} />
       <div id="brand" className="brand-bg">
         <ReturnTo path={'/'} text={'Home'} />
         <h3>{name}</h3>

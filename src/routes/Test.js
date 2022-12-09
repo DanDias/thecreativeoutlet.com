@@ -3,9 +3,9 @@ import { Container } from "@mui/system"
 import ReturnTo from "../components/ReturnTo"
 import SimplePage from "../components/SimplePage"
 
-const Test = () => {
+const Test = ({handleSidebar}) => {
   return (
-    <SimplePage title='Test'>
+    <SimplePage title='Test' handleSidebar={handleSidebar}>
       <ReturnTo path="/" text="Home" />
       <Container>
         <Paper>

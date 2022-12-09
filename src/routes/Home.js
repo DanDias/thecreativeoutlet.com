@@ -9,7 +9,7 @@ import FlashyHeader from "../components/FlashyHeader";
 
 const { items, frontpageTags } = config;
 
-const Home = () => {
+const Home = ({handleSidebar}) => {
   const categories = items.map(({ category }) => {
     return category;
   }).filter(Filters.dedupe);
@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <React.Fragment>
-        <FlashyHeader />
+        <FlashyHeader handleSidebar={handleSidebar} />
         <div className="Categories">
             <div className="container">
                 <div className="row">

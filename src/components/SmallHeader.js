@@ -3,7 +3,7 @@ import config from '../settings.json';
 
 const { metadata } = config;
 
-const SmallHeader = ({ cart=true, clues=true}) => {
+const SmallHeader = ({ cart=true, clues=true, handleSidebar }) => {
     return (<header>
         <div className="head_top_small">
             <div className="header">
@@ -32,7 +32,7 @@ const SmallHeader = ({ cart=true, clues=true}) => {
                                     </li> }
 
                                     <li>
-                                        <button type="button" id="sidebarCollapse">
+                                        <button type="button" id="sidebarCollapse" onClick={handleSidebar}>
                                             <img src={"/images/menu_icon.png"} alt="This is the hamburger menu. But not a menu for hamburgers. It's the three little lines we somehow chose to call a hamburger menu. Crazy, right?" />
                                         </button>
                                     </li>

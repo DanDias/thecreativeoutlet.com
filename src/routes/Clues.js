@@ -3,15 +3,15 @@ import { Container } from "@mui/system"
 import ReturnTo from "../components/ReturnTo"
 import SimplePage from "../components/SimplePage"
 
-const Clues = () => {
+const Clues = ({handleSidebar}) => {
   return (
-    <SimplePage title='Clues'>
+    <SimplePage title='Clues' handleSidebar={handleSidebar}>
       <ReturnTo path="/" text="Home" />
       <Container>
         <Paper>
           Oh. This isn't a search page. <br />
           It's a clue page! <br />
-          <br /><br /><br /><br /><br /><br /><br /><br />I have no clue.
+          <br /><br /><br /><br /><br /><br /><br /><br />...I have no clue.
         </Paper>
       </Container>
     </SimplePage>

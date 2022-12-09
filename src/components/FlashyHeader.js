@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const { metadata } = config;
 
-const FlashyHeader = ({}) => {
+const FlashyHeader = ({ handleSidebar }) => {
   return(<header>
             <div className="head_top">
                 <div className="header">
@@ -36,7 +36,7 @@ const FlashyHeader = ({}) => {
                                         </li>
 
                                         <li>
-                                            <button type="button" id="sidebarCollapse">
+                                            <button type="button" id="sidebarCollapse" onClick={handleSidebar}>
                                                 <img src={"/images/menu_icon.png"} alt="This is the hamburger menu. But not a menu for hamburgers. It's the three little lines we somehow chose to call a hamburger menu. Crazy, right?" />
                                             </button>
                                         </li>

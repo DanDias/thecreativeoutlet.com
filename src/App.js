@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import '@fontsource/roboto/300.css';
@@ -24,6 +24,7 @@ import Test from './routes/Test';
 const { items } = config;
 
 function App() {
+    const [sidebarOpen, setSidebarOpen] = useState(false);
     const categories = items.map(({category}) => category).filter(Filters.dedupe);
 
     const categoryRoutes = categories.map((category) => {
@@ -37,16 +38,20 @@ function App() {
         return <Route key={path} path={path} element={<Project {...projData} />} />;
       })
 
+    const handleSidebar = () => {
+      setSidebarOpen(!sidebarOpen);
+    }
+
   return (
     <div className="App">
         <Loader />
         <Router>
-            <Sidebar categories={categories} />
+            <Sidebar categories={categories} open={sidebarOpen} handleSidebar={handleSidebar} />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path='/test' element={<Test />} />
-                <Route path='/cart' element={<Cart />} />
-                <Route path='/clues' element={<Clues />} /> 
+                <Route path="/" element={<Home handleSidebar={handleSidebar} />} />
+                <Route path='/test' element={<Test handleSidebar={handleSidebar} />} />
+                <Route path='/cart' element={<Cart handleSidebar={handleSidebar} />} />
+                <Route path='/clues' element={<Clues handleSidebar={handleSidebar} />} /> 
                 {categoryRoutes}
                 {projectRoutes}
             </Routes>

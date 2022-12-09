@@ -7,7 +7,7 @@ import { ArrowBack } from "@mui/icons-material";
 import { marked } from 'marked';
 import insane from 'insane';
 
-const Project = ({ name, category, blurb, thumbnail, linkTo = null, featured, short = false }) => {
+const Project = ({ name, category, blurb, thumbnail, linkTo = null, featured=false, short = false, handleSidebar }) => {
   const navigate = useNavigate();
   // The short version for featured links
   if (short) {
@@ -24,7 +24,7 @@ const Project = ({ name, category, blurb, thumbnail, linkTo = null, featured, sh
       navigate(urize(category));
     }
     return (<React.Fragment>
-      <SmallHeader />
+      <SmallHeader handleSidebar={handleSidebar} />
       <IconButton color='primary' onClick={handleRedirect}>
         <ArrowBack />
         <p>Back to {category}</p>
