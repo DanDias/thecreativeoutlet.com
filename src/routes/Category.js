@@ -12,7 +12,7 @@ const { items } = config;
 
 const Category = ({ name, handleSidebar, children }) => {
   const projectItems = items.filter(Filters.byProp("category",name)).map((props) => {
-    return <Project {...props} short={true} >{props.name}</Project>
+    return <Project {...props} short={true} handleSidebar={handleSidebar}>{props.name}</Project>
   });
 
   return (

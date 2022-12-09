@@ -27,23 +27,22 @@ function App() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const categories = items.map(({category}) => category).filter(Filters.dedupe);
 
+    const handleSidebar = () => {
+      setSidebarOpen(!sidebarOpen);
+    }
     const categoryRoutes = categories.map((category) => {
         return <Route key={category} path={urize(category)} element={
-          <Category name={category} />
+          <Category name={category} handleSidebar={handleSidebar} />
         } />
       })
       
       const projectRoutes = items.map((projData) => {
         const path = urize([projData.category,projData.name]);
-        return <Route key={path} path={path} element={<Project {...projData} />} />;
+        return <Route key={path} path={path} element={<Project {...projData}  handleSidebar={handleSidebar}/>} />;
       })
 
-    const handleSidebar = () => {
-      setSidebarOpen(!sidebarOpen);
-    }
-
   return (
-    <div className="App">
+    <div className="App" onClick={sidebarOpen ? handleSidebar : ()=>{}}>
         <Loader />
         <Router>
             <Sidebar categories={categories} open={sidebarOpen} handleSidebar={handleSidebar} />

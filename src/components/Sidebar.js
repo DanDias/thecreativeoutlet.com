@@ -1,4 +1,4 @@
-import { Drawer } from '@mui/material';
+import { Box, Drawer, List, ListItem } from '@mui/material';
 import { Link } from 'react-router-dom';
 import CategoryList from './CategoryList';
 
@@ -7,18 +7,23 @@ const Sidebar = ({categories, open, handleSidebar}) => {
         anchor='left'
         open={open}
     >
-        <nav>
-            <div id="dismiss sidebar" onClick={handleSidebar}>
+        <Box
+            sx={{ width: 250 }}
+            role="presentation"
+            onClick={handleSidebar}
+            onKeyDown={handleSidebar}
+            >
+{/*             <div id="dismiss sidebar" onClick={handleSidebar}>
                 <i className="fa fa-arrow-left"></i>
-            </div>
+            </div> */}
 
-            <ul className="list-unstyled components">
-                <li className="active">
-                    <Link to='/'>Home</Link>
-                </li>
+            <List>
+                <ListItem>
+                    <Link to='/'><h2>Home</h2></Link>
+                </ListItem>
                 <CategoryList categories={categories} />
-            </ul>
-        </nav>
+            </List>
+        </Box>
     </Drawer>)
 }
 
