@@ -1,24 +1,31 @@
-import { Container, Grid, Pagination } from "@mui/material";
+import { Container, Grid, Pagination, Stack } from "@mui/material";
 import React, { useState } from "react";
 
-const PaginatedList = ({items, itemsPerPage=8, itemsPerRow=4, filter=(item,index,array) => { return true; }}) => {
-  const [ page, setPage ] = useState(1);
+const PaginatedList = ({items, itemsPerPage=6, itemsPerRow=3, filter=(item,index,array) => { return true; }}) => {
+  const [ page, setPage ] = useState(0);
 
-  const maxPages = itemsPerPage%items.length;
+  const maxPages = Math.ceil(items.length/itemsPerPage)-1; // Starting at 0 is more convenient than not.
+  const sliceStart = page*itemsPerPage;
+  const colSize = 12/itemsPerRow;
   const filteredItems = items
     .filter(filter)
-    //.slice(page*itemsPerPage)
+    .slice(sliceStart,sliceStart+itemsPerPage)
     .map((item) => {
-      return <Grid item sm={4} key={item.key}>
+      return <Grid item sm={colSize} xl={colSize*2} key={item.id}>
           {item}
-        </Grid>})
+        </Grid>
+    })
+  
+  const handleChange = (event,page) => {
+    setPage(page-1);
+  }
 
-  return (<React.Fragment>
-    <Grid container spacing={4}>
+  return (<Stack spacing={itemsPerRow} alignItems="center">
+    <Grid container spacing={5}>
     {filteredItems}
   </Grid>
-  <Container>{ filteredItems.length > itemsPerPage ? <Pagination count={maxPages} defaultPage={1} page={page} /> : null }</Container>
-  </React.Fragment>);
+  <Container >{ items.length > itemsPerPage ? <Pagination count={maxPages} color="primary" onChange={handleChange}/> : null }</Container>
+  </Stack>);
 }
 
 export default PaginatedList;

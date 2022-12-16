@@ -1,6 +1,7 @@
 {
   "items": [
     {
+      "id": "144E2D24-9DE3-457F-8DE2-77D8430BFDA5",
       "name": "Terrarium",
       "category": "Pixel Art",
       "blurb": "Part of my sketch a day challenge. I really like how this one came out.",
@@ -8,6 +9,7 @@
       "featured": true
     },
     {
+      "id": "B2751164-3E68-4A26-BB59-67C4D8DA8ABB",
       "name": "UFO",
       "category": "Pixel Art",
       "blurb": "Part of the <a href='https://www.reddit.com/r/SketchDaily/' target='_blank'>sketch daily</a> challenge series. I was really happy with the idea and the execution wasn't bad either.",
@@ -15,6 +17,7 @@
       "featured": true
     },
     {
+      "id": "755FF217-E9E6-41A7-8B8A-D27A010EAAF7",
       "name": "Bridges on Mute",
       "category": "Dumb Jokes",
       "blurb": "This is a self published joke that is targetted for a spicific group of people and it's pages are mostly blank. ",
@@ -23,12 +26,14 @@
       "featured": true
     },
     {
+      "id": "14B4FC98-75E6-493D-AE35-D998EF1815E4",
       "name": "Brief Case (sketch)",
       "category": "Pixel Art",
       "blurb": "One of the <a href='https://www.reddit.com/r/SketchDaily/' target='_blank'>sketch daily</a> prompts was Briefcase. I went for the obvious pun and made an image showing a brief case. A little animation in there for fun!",
       "thumbnail": "/images/pixelart/BriefCase.gif"
     },
     {
+      "id": "FE7436CE-336B-4ACF-8F44-EF44D8221B8D",
       "name": "Brief Cases",
       "category": "Games",
       "status": "On Hold",
@@ -36,54 +41,63 @@
       "thumbnail": "/images/games/BriefCases_Game.gif"
     },
     {
+      "id": "93911FB3-1672-4AFE-971C-DEA0C94C1CA6",
       "name": "Beach Hyena",
       "category": "Pixel Art",
       "blurb": "In the Brief Cases 'universe' this little guy loves going to the beach. I figured Hyenas laugh, so they have to like a good time.",
       "thumbnail": "/images/pixelart/BeachHyena.png"
     },
     {
+      "id": "A96EA6E2-BAFD-49CB-92E9-97796F578A2A",
       "name": "Lamp Post",
       "category":"Pixel Art",
       "blurb": "A lamp post inspired by a lamp post outside my house. It took on its own life afterwards. It reminds me a bit of the lamp post at the End of Time in Chrono Trigger.",
       "thumbnail": "/images/pixelart/Lamppost.png"
     },
     {
+      "id": "7E9DA061-2528-4EE9-BD7E-F598D76A655B",
       "name": "Island",
       "category": "Pixel Art",
       "blurb": "An experiment I did with a limited color palette. Reminds me of a Game Boy (original) game.",
       "thumbnail": "/images/pixelart/Island.png"
     },
     {
+      "id": "96515CA3-6CB0-4BB1-A51D-D3BCD9F88A47",
       "name": "Earthrise",
       "category": "Pixel Art",
       "blurb": "I used the picture Earthrise as a reference for this and primarily used a tool that lighten and darkens pixels since it was the perfect scene for that opeeration.",
       "thumbnail": "/images/pixelart/Earthrise (Moon).png"
     },
     {
+      "id": "DEA051E6-42ED-4D7B-BD66-BE4D92615039",
       "name": "CyberDuck",
       "category": "Pixel Art",
       "blurb": "I was talking to a colleague about an FTP tool called CyberDuck and it sparked this image. I liked playing with the dark background and light from the screen.",
       "thumbnail": "/images/pixelart/CyberDuck.png"
     },
     {
+      "id": "152E33B1-F82F-4BF2-9F6F-3C4F14F34D21",
       "name": "Cockroach",
       "category": "Pixel Art",
       "blurb": "A part of the <a href='https://www.reddit.com/r/SketchDaily/' target='_blank'>sketch daily</a> set. The first one I did and the gateway back to doing pixel art.",
       "thumbnail": "/images/pixelart/Cockroach.png"
     },
     {
+      "id": "1C4776CC-61A6-4FB3-A2B1-FA363406C585",
       "name": "Judge Hooty",
       "category": "Pixel Art",
       "blurb": "Since a group of owls are a parliment and that gives visions of people in white powdered wigs and then judges. Of course the judge's name had to be Judge Hooty.",
       "thumbnail": "/images/pixelart/JudgeHooty.png"
     },
     {
+      "id": "6836DFA7-972A-4A7E-B405-86D63E6D5580",
       "name": "Magpie",
       "category": "Pixel Art",
       "blurb": "One of the anthropomorphized animals I planned on using for Brief Cases.",
       "thumbnail": "/images/pixelart/Magpie.png"
     },
     {
+      "id": "40E8011B-B087-4A6A-AF77-F67B469D387D",
       "name": "Moth",
       "category": "Pixel Art",
       "blurb": "Another insect that I think was for <a href='https://www.reddit.com/r/SketchDaily/' target='_blank'>sketch daily</a>.",
@@ -96,12 +110,14 @@
       "thumbnail": "/images/pixelart/MrFarington_Front.png"
     },
     {
+      "id": "0D1EC619-8A24-4389-97CC-29F56A283665",
       "name": "Robot",
       "category": "Pixel Art",
       "blurb": "Robot! I started with the treads not really knowing what I wanted to draw. Made my way up.",
       "thumbnail": "/images/pixelart/Robot.png"
     },
     {
+      "id": "F7BB6ACA-7442-4BB4-83AC-881FF1DDF1F6",
       "name": "Skunk",
       "category": "Pixel Art",
       "blurb": "An anthropomorphized skunk who was going to be a plantiff.",
@@ -112,6 +128,22 @@
       "category": "Pixel Art",
       "blurb": "My daughter likes tigers. So... Tiger.",
       "thumbnail": "/images/pixelart/TigerLarge.png"
+    },
+    {
+      "id": "CCF574DC-1597-43B0-B2E3-807D988661F3",
+      "name": "RaMonday.com",
+      "category": "Dumb Jokes",
+      "blurb": "I had a friend tell me that nothing was better than Pho-riday. I dug myself into a hole saying Ramen on Monday was a better and RaMonday was a better noodle-based pun. So I made a site, stickers, etc. For awhile we had RaMonday lunches and put pictures up on the Website. I shut it down because it took time to maintain.",
+      "thumbnail": "/images/dumbjokes/ramonday.png",
+      "linkTo": "https://www.ramonday.com"
+    },
+    {
+      "id": "8EA6A3AA-CFED-40CE-8710-28E339052BCD",
+      "name": "Terrible.games",
+      "category": "Web Development",
+      "blurb": "I have had trouble letting people see my work. I'm not sure if it's a fear of not being good enough? So I bought the domain terrible.games. At least then, if someone says it's terrible it's easy to play off as 'What site did you play it on? Of course it's terrible!'",
+      "thumbnail": "/images/games/terrible.games.png",
+      "linkTo": "https://www.terrible.games"
     }
   ],
   "tags": [],
